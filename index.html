@@ -1,130 +1,94 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<!-- Website template by freewebsitetemplates.com -->
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>個人簡介</title>
-    <style>
-        /* 全局樣式設置 */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 1em 0;
-            text-align: center;
-        }
-
-        section {
-            margin: 2em auto;
-            padding: 1em;
-            max-width: 600px;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h2 {
-            color: #4CAF50;
-        }
-
-        #social-media a {
-            display: block;
-            margin: 0.5em 0;
-            color: #4CAF50;
-            text-decoration: none;
-        }
-
-        #photo-gallery img {
-            width: 100%;
-            height: auto;
-            margin-bottom: 1em;
-        }
-
-        #activity-log ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        #activity-log li {
-            background: #e9e9e9;
-            margin: 0.5em 0;
-            padding: 0.5em;
-            border-radius: 5px;
-        }
-
-        #download-section a {
-            display: inline-block;
-            padding: 0.5em 1em;
-            background-color: #4CAF50;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-    </style>
+	<meta charset="UTF-8">
+	<title>Tzu-Chuen Lu</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
-    <!-- 頁面標題 -->
-    <header>
-        <h1>個人簡介</h1>
-    </header>
-
-    <!-- 個人資訊區 -->
-    <section id="personal-info">
-        <h2>個人資訊</h2>
-        <p>姓名: Ann</p>
-        <p>職業: 網頁開發者</p>
-        <p>簡介: 熱愛程式設計，專注於前端開發。</p>
-    </section>
-
-    <!-- 社交媒體連結區 -->
-    <section id="social-media">
-        <h2>社交媒體</h2>
-        <a href="https://www.facebook.com/yourprofile" target="_blank">Facebook</a>
-        <a href="https://www.instagram.com/yourprofile" target="_blank">Instagram</a>
-    </section>
-
-    <!-- 個人照片展示區 -->
-    <section id="photo-gallery">
-        <h2>個人照片</h2>
-        <img src="https://s.yimg.com/ny/api/res/1.2/MASkJ8JxeGcYxvHzCKJzSw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNg--/https://media.zenfs.com/zh-tw/nownews.com/1d1c5225fe9c6fcd78e765fb4d5885f1" alt="個人照片1">
-        <img src="https://cc.tvbs.com.tw/img/upload/2023/08/22/20230822154442-f9c0e5a7.jpg" alt="個人照片2">
-    </section>
-
-    <!-- 活動紀錄展示區 -->
-    <section id="activity-log">
-        <h2>活動紀錄</h2>
-        <ul>
-            <li>2023-01-01: 參加前端開發者大會</li>
-            <li>2023-03-15: 完成React課程</li>
-            <li>2023-05-20: 發表技術博客文章</li>
-        </ul>
-    </section>
-
-    <!-- 文件下載區 -->
-    <section id="download-section">
-        <h2>檔案下載</h2>
-        <a href="resume.pdf" download="Ann的履歷.pdf">下載履歷</a>
-    </section>
-
-    <script>
-        // 在這裡可以添加JavaScript程式碼
-        // 例如，你可以添加一些互動功能或動態效果
-        document.addEventListener("DOMContentLoaded", function() {
-            console.log("頁面已載入完成");
-        });
-
-        // 示例：點擊社交媒體連結時顯示提示
-        document.querySelectorAll("#social-media a").forEach(function(link) {
-            link.addEventListener("click", function() {
-                alert("即將跳轉到 " + this.textContent);
-            });
-        });
-    </script>
+	<div id="header">
+		<div>
+			<a href="index.html" id="logo"><img src="images/farm.png" alt="logo" width="150"></a>
+			<ul>
+				<li class="selected">
+					<a href="index.html">首頁</a>
+				</li>
+				 
+				<li>
+					<a href="blog.html">學生</a>
+				</li>
+				<li>
+					<a href="about.html">關於我</a>
+				</li>
+				<li>
+					<a href="contact.html">論文著作</a>
+				</li>
+				<li>
+					<a href="introduction/index.html">作品集</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="body" class="home">
+		<div class="blog">
+			<img src="images/me.jpg" alt="" width="300" >
+			<div>
+				
+				<h3>呂慈純 Tzu-Chuen Lu</h3>
+				<p>
+通訊處：411030臺中市太平區坪林里中山路二段 57號, Sec. 2, Zhongshan Rd., Taiping Dist., Taichung 411030, Taiwan (R.O.C.)<br>
+電話：(公) (04)23924505<br>
+傳真：(公) (04) 23923363<br>
+電子郵遞：tclu0419@gmail.com  
+<br>
+Professor<br>
+ Graduate  Institute, Prospective Technology of Electrical Engineering and Computer Science<br>
+ National Chin-Yi University of Technology<br>
+URL: https://annlu0419.github.io/index.html
+			  </p>
+			</div>
+		</div>
+		<div class="article">
+			<div>
+				<h3>CV</h3>
+				<p>
+					Tzu-Chuen Lu received the B.M. degree (1999) and MSIM degree (2001) in Information Management
+                            from Chaoyang University of Technology, Taiwan. She received her Ph.D. degree (2006) in
+                            Computer Engineering from National Chung Cheng University. Her current title is Professor in
+                            Graduate  Institute, Prospective Technology of Electrical Engineering and Computer Science from National Chin-Yi University of Technology.
+			  </p>
+				
+			</div>
+			<img src="images/winter.jpg" alt="" width="300"> 
+		</div>
+		<div class="news">
+        <iframe width="460" height="315" src="https://www.youtube.com/embed/cASiwKh4Ve0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div>
+	  <h3>FARM 73</h3>
+				<p> 這是一款專為銀髮族設計的遊戲
+				</p>
+				<p>
+					2018第23屆大專校院資訊應用服務創新競賽產學合作組（第一名）<br>
+《Here to Elevator Pitch! 學生團隊競賽》（第二名） <br>
+「2019創想星球科技大賽」創新科技組 （第二名）<br>
+2019年全國技專校院學生實務專題製作競賽暨成果展（第二名）<br>
+2018全球學生創新挑戰、復健工程暨輔具黑客松競賽（第三名）<br>
+InnoServe 2019資訊應用服務創新創業新秀選拔 (金牌)
+				</p>
+		  </div>
+	  </div>
+	</div>
+    
+ 
+    
+	<div id="footer">
+		<div>
+			<p>
+				&#169; NCUT
+			</p>
+			 
+		</div>
+	</div>
 </body>
 </html>
